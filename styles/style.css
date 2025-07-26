@@ -1,1 +1,76 @@
 @charset "UTF-8";
+
+/*
+    Paleta de Cores:
+    Verde: #3BF595
+    Laranja: #F5B53B
+    Roxo: #B33BF5
+*/
+
+:root {
+    --cor-principal: #3BF595;
+    --cor-secundaria: #9ef7ca;
+    --cor-destaque: #B33BF5;
+    --cor-auxiliar: #F5B53B;
+}
+
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: var(--cor-principal);
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 300px;
+    height: 500px;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.450);
+
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+    
+}
+
+section#login > div#imagem {
+    display: block;
+    background: var(--cor-principal) url(../assets/images/pexels-francesco-sgura-2572136-4161916\ \(1\).jpg) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 200px;
+    opacity: 0.75;
+}
+
+section#login > div#form {
+    display: block;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
