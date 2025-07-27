@@ -9,7 +9,6 @@
 
 :root {
     --cor-principal: #3BF595;
-    --cor-secundaria: #bdffde;
     --cor-destaque: #B33BF5;
     --cor-destaque2: #6900a2;
     --cor-auxiliar: #F5B53B;
@@ -29,7 +28,7 @@ body, html {
 }
 
 body {
-        background-image: linear-gradient(to bottom, var(--cor-principal), var(--cor-destaque));
+    background-image: linear-gradient(to bottom, var(--cor-principal), var(--cor-principal), var(--cor-destaque));
 }
 
 main {
@@ -48,8 +47,7 @@ section#login {
     border-radius: 25px;
     overflow: hidden;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.450);
-
-    transition: width 0.3s, height 0.3s;
+    transition: width 0.2s, height 0.2s;
     transition-timing-function: ease;
     transform: translate(-50%, -50%);
     
